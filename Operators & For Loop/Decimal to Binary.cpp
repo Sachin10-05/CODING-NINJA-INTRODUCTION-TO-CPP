@@ -55,40 +55,26 @@ int main()
 //Method-2
 ----------
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int N;
-	cin >> N;
-	string res;
-	int rem;
-	if(N==0)
-		cout << "0";
-	else
-	{
-		while(N != 0)
-		{
-			rem = (N%2);
-			res += (rem==0 ? "0" : "1");
-			N=N/2;
-		}
-		
-		/*
-		for(int i=res.length()-1; i>=0;i--)
-		{
-			cout << res[i] << "";
-		}
-		*/
-		
-		//algorithm to convert STRING TO INTEGER
-		long int x = 0;
-		for(int i=0;i<res.length();i++)
-		{
-			x = x*10 + res[i] - '0';
-		}
-	}
-	
+    int N;  //Decimal Number
+    cin >> N;
+    string res;
+    while(N!=0)
+    {
+        res = res + ((N%2==0) ? "0" : "1");
+        N = N/2;
+    }
+    
+    //algorithm to convert STRING to INTEGER
+    long int ans=0;
+    for(int i=res.length()-1;i>=0;i--)
+    {
+        ans=(ans*10) + res[i] - '0'; 
+    }
+    cout << ans;
 }
 
 
