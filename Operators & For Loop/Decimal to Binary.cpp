@@ -57,12 +57,10 @@ int main()
 
 #include<iostream>
 using namespace std;
-
 int main()
 {
 	int N;
 	cin >> N;
-	
 	string res;
 	int rem;
 	if(N==0)
@@ -76,9 +74,18 @@ int main()
 			N=N/2;
 		}
 		
+		/*
 		for(int i=res.length()-1; i>=0;i--)
 		{
 			cout << res[i] << "";
+		}
+		*/
+		
+		//algorithm to convert STRING TO INTEGER
+		long int x = 0;
+		for(int i=0;i<res.length();i++)
+		{
+			x = x*10 + res[i] - '0';
 		}
 	}
 	
@@ -97,25 +104,3 @@ int main()
 
 
 
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
