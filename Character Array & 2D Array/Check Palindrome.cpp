@@ -23,7 +23,7 @@ false
 //--------
 
 
-
+/*
 #include<bits/stdc++.h>
 using namespace std;
 bool checkPalindrome(char str[])
@@ -53,10 +53,52 @@ int main()
 	cin >> str;
 	cout << (checkPalindrome(str) ? "true" : "false" );
 }
+*/
+
+//*********************************************************************************************************************************************************************
+
+
+//using recursion
+//using double pointer
 
 
 
+#include<bits/stdc++.h>
+using namespace std;
 
+bool isPal(string str,int l,int r)
+{
+	//base case
+	if(l>=r)
+		return true;
+	if(str[l] != str[r])
+		return false;
+	return isPal(str,l+1,r-1);
+}
+
+
+
+bool isPalindrome(string str)
+{
+	int n = str.length();
+	if(n==0)
+		return true;
+	return isPal(str,0,n-1);
+}
+
+
+int main()
+{
+	string str;
+	cin >> str;
+	
+	if (isPalindrome(str))
+    		cout << "Yes";
+    	else
+    		cout << "No";
+ 
+    	return 0;
+}
 
 
 
