@@ -93,9 +93,9 @@ int main()
 	cin >> str;
 	
 	if (isPalindrome(str))
-    		cout << "Yes";
+    		cout << "true";
     	else
-    		cout << "No";
+    		cout << "false";
  
     	return 0;
 }
