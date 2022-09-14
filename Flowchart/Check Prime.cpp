@@ -1,34 +1,113 @@
                                                                             CHECK PRIME
                                                                             ***********
-									    
+
+//Using Iteration
+//---------------
+
 //Time Complexity: O(sqrt(N))
-									    
+
+
 #include<bits/stdc++.h>
 using namespace std;
-int main()
+
+bool isPrime(int n)
 {
-   int n;
-   cin >> n;
-   bool res = true;
-   if(n<=1)
-      cout << "Not Prime";
-   else
-   {
-      for(int i=2;i<=sqrt(n);i++)     ☑☑☑☑☑
-      {
-         if(n%i == 0)
-	 {
-	    res = false;
-	    break;
-	 }
-      }
-      if(res)
-         cout << "Yes Prime";
-      else
-	 cout << "Not Prime";
+    if(n<=1)
+        return false;
+    for(int i=2;i<=sqrt(n);i++)
+    {
+        if(n%i == 0)
+            return false;
     }
+    return true;
 }
 
+int main() 
+{
+    int n;
+    cin >> n;
+    isPrime(n) ? cout << "Prime Number" : cout << "Not Prime";
+}
+										    
+
+										    
+	
+										    
+										    
+//******************************************************************************************************************************************************************
+		
+										    
+using Iteration									    
+---------------
+
+//Time Complexity: O(N)	
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isPrime(int n)
+{
+    if(n<=1)
+        return false;
+    for(int i=2; i < n; i++)
+    {
+        if(n%i == 0)
+            return false;
+    }
+    return true;
+}
+
+int main() 
+{
+    int n;
+    cin >> n;
+    isPrime(n) ? cout << "Prime Number" : cout << "Not Prime";
+}
+*/
+
+
+
+
+
+//******************************************************************************************************************************************************************
+
+
+using Iteration (without creating new function)
+-----------------------------------------------
+
+//Time complexity: O(sqrt(N))
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin >> n;
+    
+    //base case
+    if(n<=1)
+        cout << "Not Prime";
+    else
+    {
+        bool flag  = true;
+        for(int i=2;i<=sqrt(n);i++)
+        {
+            if(n%i == 0)
+            {
+                flag = false;
+                break;
+            }
+        }
+        if(flag)
+            cout << "Prime Number";
+        else
+            cout << "Not Prime";
+    }
+}
+*/
 
 
 
