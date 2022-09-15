@@ -14,15 +14,29 @@
                          * Member of Fibonacci
                          
                          
-                         
+*********************************************************************************************************************************************************************                         
                          
                          
                          
 2. Getting started:
 *******************
-      * 
+      * Variables
+      * data types
+      * Input/Output
+      * Operators - i)  Arithmetic
+                    ii) Relational
+                    iii)Logical
+      * How is data stored for - int, float, double, char
+      * MCQs
    
-3. Condition & Loops
+   
+*********************************************************************************************************************************************************************   
+ 
+ 
+ 
+3. Condition & Loops:
+*********************
+      * 
 4. Pattern-1
 5. Pattern-2
 6. Operators & For Loops
