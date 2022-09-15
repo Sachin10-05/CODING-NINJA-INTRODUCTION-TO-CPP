@@ -125,40 +125,114 @@
 
 8. Functions:
 *************
-      * 
-9. Arrays
-10.Searching & Sorting
-11.Character Arrays & 2D-Arrays
-12.Test-2
+      * Define Function
+      * Why do we need function ?
+      * Function call
+      * Variable & Scope
+      * Pass By value & reference
+      
+        problems
+        --------
+      * Fahrenheit to Celcius Table
+      * Fibonacci Number
+      
+      
+********************************************************************************************************************************************************************
 
 
 
+9. Arrays:
+**********
+      * Array defination
+      * Array declaration
+      * sizeof operator
+      * Passing Array to Function
+      
+        problems
+        --------
+      * Array Sum
+      * Linear Search
+      * Arrange Numbers in array
+      * Swap Alternate
+      * Assignment:-    * Find Unique
+                        * Find Duplicate
+                        * Intersection of two arrays
+                        * Pair sum
+                        * Triplet Sum
+                        * Sort 0 1
+                        
+                        
+********************************************************************************************************************************************************************
 
 
 
+10.Searching & Sorting:
+***********************
+      * Searching: i)  Linear Search
+                   ii) Binary Search
+                   iii)Ternary Search (Not Taught)
+      
+      * Sorting:   i)  Selection Sort
+                   ii) Bubble Sort
+                   iii)Insertion Sort
+      * How to Merge two sorted array
+      
+        problems
+        --------
+      * Binary Search
+      * Bubble Sort
+      * Insertion Sort
+      * Merge two sorted Array
+      * Assignment:-    * Push Zeros to end
+                        * Rotate Array
+                        * Second Largest in array
+                        * Check Array Rotation
+                        * Sort 0 1 2
+                        * Sum of two arrays
+                        
+                        
+********************************************************************************************************************************************************************
 
 
 
+11.Character Arrays & 2D-Arrays:
+********************************
+      * Character Array
+      * Inbuilt Functions
+      * 2D-Array
+      * How are 2D Arrays Stored ?
+      
+        problems
+        --------
+      * Check Palindrome
+      * Replace Character
+      * Trim Spaces
+      * Reverse word Wise
+      * Print All Sub-strings
+      * Column wise sum
+      * Largest Row or Column
+      * wave print
+      * Spiral print
+      * Assignment:-    * Check Permutation
+                        * Remove consecutive Duplicates
+                        * Reverse Each Word
+                        * Remove Character
+                        * Highest Occuring Character
+                        * Compress the string
+                        
+                        
+********************************************************************************************************************************************************************
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+12.Test-2:
+**********
+      * Print 2D Array
+      * Minimum Length Word
+      * Leaders in Array
+      
+      
+*******************************************************************************************************************************************************************
 
 
 
