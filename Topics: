@@ -86,9 +86,46 @@
 
 6. Operators & For Loops:
 *************************
+      * Bitwise operator
+      * Increment and Decrement operator
+      * For Loop
+      * Break & Continue
+      * Scope of Variable
+      * cin vs cin.get()
+      
+        problems
+        --------
+      * Nth Fibonacci Number
+      * All Prime Numbers
+      * Count Characters
+      * Assignment:-    * Sum or Product
+                        * Terms of A.P
+                        * Reverse of a number
+                        * Binary to Decimal
+                        * Decimal to Binary
+                        * Square root (integral)
+                        * Check Number sequence
+                        
+                        
+*********************************************************************************************************************************************************************
 
-7. Test-1
-8. Functions
+
+
+7. Test-1:
+**********
+      * Pyramid Number Pattern
+      * Number Star pattern
+      * Second Largest Element
+      * MCQs
+      
+      
+********************************************************************************************************************************************************************
+
+
+
+8. Functions:
+*************
+      * 
 9. Arrays
 10.Searching & Sorting
 11.Character Arrays & 2D-Arrays
