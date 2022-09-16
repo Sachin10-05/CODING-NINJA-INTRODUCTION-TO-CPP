@@ -14,48 +14,95 @@ Sample Output 1:
 */
 
 
-//SOLUTION:
+********************************************************************************************************************************************************************************
 
-#include<iostream>
+//using FOR loop
+****************
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
+int main() 
 {
-	int N;
-    cin >> N;
+    int n;
+    cin >> n;
     
-    int i=1;
-    while(i<=N)
+    int x = 0;
+    for(int i=1;i<=n;i++)       // left triable containing spaces
     {
-        int j=1;
-        while(j<=(N-i))
+        for(int j=1;j<=n-i;j++)
         {
             cout << " ";
-            j++;
         }
         
-        j=1;
-        int x=i;
-        while(j<=i)
+        for(int j=1;j<=i;j++)    // Middle mirror Numbered triangle
         {
-            cout << x;
-            x++;
-            j++;
-		}
-		
-		j=2;
-        int y=2*i - 2;
-        while(j<=i)
+            cout << i+j-1;
+        }
+        
+        int a = x;
+        for(int j=1;j<i;j++)     // right triangle
         {
-            cout << y;
-            y--;
-            j++;
-		}
-		
-		cout << endl;
-		i++;
+            cout << a;
+            a--;
+        }
+        x+=2;
+        cout << endl;
     }
 }
+
+
+
+********************************************************************************************************************************************************************
+
+//using WHILE loop
+******************
+
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+   int N;
+   cin >> N;
+   int i=1;
+   while(i<=N)
+   {
+      int j=1;
+      while(j<=(N-i))
+      {
+         cout << " ";
+         j++;
+      }
+        
+      j=1;
+      int x=i;
+      while(j<=i)
+      {
+         cout << x;
+         x++;
+         j++;
+      }
+		
+      j=2;
+      int y=2*i - 2;
+      while(j<=i)
+      {
+         cout << y;
+         y--;
+         j++;
+      }
+      cout << endl;
+      i++;
+    }
+ }
+*/
+	
+**************************************************************************************************************************************************************************
+
+
+
+
 
 
 
