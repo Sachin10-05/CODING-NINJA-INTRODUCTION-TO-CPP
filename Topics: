@@ -92,7 +92,8 @@
       * For Loop
       * Break & Continue
       * Scope of Variable
-      * cin vs cin.get()
+      * cin vs cin.get() : cin ignores spaces(' ') , newLine('\n') and tab('\t')
+                         : char c = cin.get() is used to solve above cin problems.
       * MCQs
       
         problems
