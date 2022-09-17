@@ -33,7 +33,8 @@ int main()
    while(N!=0)
    {
       int rem=N%10;
-      res = res + (rem*pow(2,i));
+      if(rem == 1)
+          res = res + pow(2,i);
       i++;
       N=N/10;
    }
