@@ -28,60 +28,42 @@ Sample Output 2:
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
+***********************************************************************************************************************************************************************
 
 //Solution
 -----------
   
 #include<bits/stdc++.h>
 using namespace std;
-
 int linearSearch(int arr[],int N,int val)
 {
-	for(int i=0;i<N;i++)
-	{
-		if(arr[i]==val)
-			return i;
-	}
-	return -1;
+   for(int i=0;i<N;i++)
+   {
+      if(arr[i]==val)
+         return i;
+   }
+   return -1;
 }
-
-
-
-
-
 
 int main()
 {
-	int T;           //No of test cases
-	cin >> T;
-	
-	for(int i=0;i<T;i++)
-	{
-		int N;      //size of array
-		cin >> N;
+   int t;        //No of test cases
+   cin >> t;
+   while(t--)
+   {
+      int n;     //size of array
+      cin >> n;
+      int *arr = new int[n];
+      for(int i=0;i<n;i++)
+      {
+         cin >> arr[i];
+      }
+      int val;
+      cin >> val;
 		
-		int arr[N];
-		for(int i=0;i<N;i++)
-		{
-			cin >> arr[i];
-		}
-		int val;
-		cin >> val;
-		
-		cout << linearSearch(arr,N,val);
-	}
-}
+      cout << linearSearch(arr,N,val);
+    }
+ }
 
 
 
