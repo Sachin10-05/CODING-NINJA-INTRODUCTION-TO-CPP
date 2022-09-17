@@ -36,18 +36,18 @@ int main()
    while(N!=0)
    {
       int rem = N%2;
-      if(rem==0)
-         res+="0";
-      else
-	 res+="1";
+      res = res + to_string(rem);
       N=N/2;
    }
    
-   //reverse the string res
-   for(int i=res.length()-1;i>=0;i--)
+   reverse(res.begin(),res.end());    //reverse of string
+
+   long int ans=0;
+   for(int i=0;i<res.length();i++)    //STRING to INTEGER conversion
    {
-      cout << res[i] << "";
+      ans=(ans*10) + res[i] - '0'; 
    }
+   cout << ans;
 }
 */
   
