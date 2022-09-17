@@ -23,20 +23,81 @@ Sample Output 2 :
 
 */
 
+*********************************************************************************************************************************************************************
+
+//solution-1
+***********
+
+#include<bits/stdc++.h>
+using namespace std;
+void arrange(int *arr, int n)
+{
+    //for Even size
+    if(n%2 == 0)
+    {
+        int x = 1;
+        for(int i=0;i<n/2;i++)
+        {
+            arr[i] = x;
+            x+=2;
+        }
+    
+        int k=n;
+        for(int i=n/2;i<n;i++)
+        {
+            arr[i] = k;
+            k-=2;
+        }
+    }
+    
+    //for Odd size
+    else
+    {
+        int x = 1;
+        for(int i=0;i<=n/2;i++)
+        {
+            arr[i] = x;
+            x+=2;
+        }
+    
+        int k=n-1;
+        for(int i=n/2+1;i<n;i++)
+        {
+            arr[i] = k;
+            k-=2;
+        }
+    }
+}
+
+
+int main()
+{
+   int t;
+   cin >> t;
+   while (t--)
+   {
+      int n;
+      cin >> n;
+
+      int *arr = new int[n];
+      arrange(arr, n);
+      for (int i = 0; i < n; i++)
+      {
+         cout << arr[i] << " ";
+      }
+      cout << endl;
+      delete [] arr;
+   }
+}
 
 
 
 
-
-
-
-
-
-
-
-
-//Solution
-----------
+*********************************************************************************************************************************************************************
+*********************************************************************************************************************************************************************
+	
+//Solution-2
+*************
   
   
 #include<bits/stdc++.h>
@@ -44,7 +105,7 @@ using namespace std;
 
 void arrange(int *arr,int n)
 {
-	int k=0;
+    int k=0;
     for(int i=1;i<=n;i++)
     {
         if(i%2 != 0)
@@ -65,35 +126,29 @@ void arrange(int *arr,int n)
 }
 
 
-
-
-
-
-
-
-
 int main()
 {
-	int t;         				 //No of test cases
-	cin >> t;
-	while(t--)
-	{
-		int n;        			 //size of array
-		cin >> n;
-		int *arr = new int[n];   //dynamic array of size n
-		arrange(arr,n);
-		for(int i=0;i<n;i++)
-		{
-			cout << arr[i] << " ";
-		}
-		cout << endl;
-		delete[] arr;
-	}
+   int t;
+   cin >> t;
+   while (t--)
+   {
+      int n;
+      cin >> n;
+
+      int *arr = new int[n];
+      arrange(arr, n);
+      for (int i = 0; i < n; i++)
+      {
+         cout << arr[i] << " ";
+      }
+      cout << endl;
+      delete [] arr;
+   }
 }
 
 
 
-
+********************************************************************************************************************************************************************
 
 
 
