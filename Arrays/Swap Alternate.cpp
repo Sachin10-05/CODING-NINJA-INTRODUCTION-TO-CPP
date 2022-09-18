@@ -25,74 +25,87 @@ Sample Output 2 :
 
 
 
+***********************************************************************************************************************************************************************************
 
-
-
-
-
-
-
-
-//Solution
-----------
-  
-  
-#include<bits/stdc++.h>
-using namespace std;
-
+//Solution-1
+*************
+    
 void swapAlternate(int *arr,int size)
 {
-	if(size%2 == 0)
-	{
-		int k=0;
-		for(int i=0;i<size;i+=2)
-		{
-			k=arr[i];
-			arr[i] = arr[i+1];
-			arr[i+1] = k;
-		}
-	}
-	else
-	{
-		int k=0;
-		for(int i=0;i<size-1;i+=2)
-		{
-			k=arr[i];
-			arr[i] = arr[i+1];
-			arr[i+1] = k;
-		}
-	}
+   for(int i=0;i<size;i+=2)
+   {
+      if(i+1 < size)
+         swap(arr[i],arr[i+1]);
+   }
 }
 
 
 
 
 
+*********************************************************************************************************************************************************************************
 
+//soluton-2
+************
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+void swapAlternate(int *arr,int size)
+{
+   if(size%2 == 0)
+   {
+      int k=0;
+      for(int i=0;i<size;i+=2)
+      {
+         k=arr[i];
+	 arr[i] = arr[i+1];
+	 arr[i+1] = k;
+      }
+   }
+	
+   else
+   {
+      int k=0;
+      for(int i=0;i<size-1;i+=2)
+      {
+         k=arr[i];
+	 arr[i] = arr[i+1];
+	 arr[i+1] = k;
+      }
+   }
+}
 
 
 int main()
 {
-	int t;           //no of test cases
-	cin >> t;
-	while(t--)
-	{
-		int size;       //size
-		cin >> size;
-		int *arr = new int[size];
-		for(int i=0;i<size;i++)
-		{
-			cin >> arr[i];
-		}
-		swapAlternate(arr,size);
-		for(int i=0;i<size;i++)
-		{
-			cout << arr[i] << " ";
-		}
-		cout << endl;
-		delete[] arr;
-	}
+   int t;           
+   cin >> t;
+   while(t--)
+   {
+      int size;      
+      cin >> size;
+      int *arr = new int[size];
+      for(int i=0;i<size;i++)
+      {
+         cin >> arr[i];
+      }
+      swapAlternate(arr,size);
+      for(int i=0;i<size;i++)
+      {
+         cout << arr[i] << " ";
+      }
+      cout << endl;
+      delete[] arr;
+   }
 }
+*/
+	
+	
+
+
+
+***********************************************************************************************************************************************************************************
 
 
 
