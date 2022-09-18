@@ -2,6 +2,15 @@
 Problem
 -------
 You have been given a random integer array/list(ARR) and a number X. Find and return the number of triplets in the array/list which sum to X.
+
+Note : Given array/list can contain duplicate elements.
+Constraints :
+1 <= t <= 50
+0 <= N <= 10^2
+0 <= X <= 10^9
+Time Limit: 1 sec
+
+
 Sample Input 1:
 1
 7
@@ -30,54 +39,70 @@ For the second query, we have 5 triplets in total that sum up to 10. They are, (
 
 
 
-
-
+*****************************************************************************************************************************************************************************
 
 //Solution
-//--------
+***********
+
+//Time Complexity : O(N^3)
 
 #include<bits/stdc++.h>
 using namespace std;
 
-//Time Complexity : O(N^3)
-
 int tripletSum(int *arr,int size,int x)
 {
-	int count=0;
-	for(int i=0;i<size-2;i++)
-	{
-		for(int j=i+1;j<size-1;j++)
-		{
-			for(int k=j+1;k<size;k++)
-			{
-				if(arr[i] + arr[j] + arr[k] == x)
-					count++;	
-			}	
-		}	
-	}
-	return count;	
+   int count=0;
+   for(int i=0;i<size;i++)
+   {
+      for(int j=i+1;j<size;j++)
+      {
+         for(int k=j+1;k<size;k++)
+	 {
+	    if(arr[i] + arr[j] + arr[k] == x)
+	       count++;	
+	 }	
+      }	
+   }
+   return count;	
 }
-
-
 
 
 int main()
 {
-	int t;   // No of test cases
-	cin >> t;
-  while (t--)
-	{
-		int size;
-		int x;
-		cin >> size;
-    int *input = new int[size];
-    for (int i = 0; i < size; i++)
-		{
-			cin >> input[i];
-		}
-		cin >> x;
-    cout << tripletSum(input, size, x) << endl;
-    delete[] input;
-	}
-  return 0;
+   int t; 
+   cin >> t;
+   while (t--)
+   {
+      int size;
+      int x;
+      cin >> size;
+      int *input = new int[size];
+      for (int i = 0; i < size; i++)
+      {
+         cin >> input[i];
+      }
+      cin >> x;
+      cout << tripletSum(input, size, x) << endl;
+      delete[] input;
+   }
+   return 0;
 }
+
+
+
+
+
+
+
+********************************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
