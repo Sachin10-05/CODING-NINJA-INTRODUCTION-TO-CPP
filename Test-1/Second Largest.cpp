@@ -23,33 +23,54 @@ Sample Output 2:
 
 
 
-
-
-
-//Solution:
+******************************************************************************************************************************************************************************
 
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int N;
-	cin >> N;
+   int N;
+   cin >> N;
 	
-	int num;
-	int max = INT_MIN;
-	int secMax = INT_MIN;
-	for(int i=1;i<=N;i++)
-	{
-		cin >> num;
-		if(num>max)
-		{
-			secMax = max;
-			max = num;
-		}
-		else if(num>secMax && max!=secMax)
-		{
-			secMax = num;
-		}
-	}
-	cout << secMax;
+   int num;
+   int max = INT_MIN;
+   int secMax = INT_MIN;
+   for(int i=1;i<=N;i++)
+   {
+      cin >> num;
+      if(num>max)
+      {
+         secMax = max;
+	 max = num;
+      }
+      else if(num>secMax && max!=secMax)
+      {
+	 secMax = num;
+      }
+   }
+   cout << secMax;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
