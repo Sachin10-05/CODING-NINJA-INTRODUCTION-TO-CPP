@@ -79,9 +79,9 @@ int binarySearch(int *arr, int n, int val)
 //solution-2
 *************
 
+/*
 #include<bits/stdc++.h>
 using namespace std;
-
 int binarySearch(int *arr,int size,int x)
 {
    int start = 0;
@@ -120,7 +120,7 @@ int main()
    delete[] input;
    return 0;
 }
-
+*/
 
 
 
