@@ -26,83 +26,54 @@ Sample Output 2:
 
 
 
+***********************************************************************************************************************************************************************************
 
-
-
-
-
-
-//Solution:
------------
-  
-
-//Time complexity : O(N)
+//solution
+//Time Complexity: O(N)
 
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int findUnique(int *arr,int size)
+int findUnique(int *arr, int size)
 {
-	if(size==1)
-		return arr[0];
-	else
-	{
-		int res = arr[0];
-		for(int i=1;i<size;i++)
-		{
-			res = res ^ arr[i];     //using XOR operator
-		}
-		return res;
-	}
+   int ans = 0;
+   for(int i=0;i<size;i++)
+   {
+      ans = ans ^ arr[i];   //XOR operation
+   }
+   return ans;
 }
-
-
-
-
-
-
-
 
 
 int main()
 {
-	int t;
-	cin >> t;
-	while(t--)
-	{
-		int size;
-		cin >> size;
-		int *arr = new int[size];
-		for(int i=0;i<size;i++)
-		{
-			cin >> arr[i];
-		}
-		
-		cout << findUnique(arr,size) << endl;
-	}
-	return 0;
+   int t;
+   cin >> t;
+   while (t--)
+   {
+      int size;
+      cin >> size;
+	   
+      int *input = new int[size];
+      for (int i = 0; i < size; ++i)
+      {
+         cin >> input[i];
+      }
+      cout << findUnique(input, size) << endl;
+   }
+   return 0;
 }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+************************************************************************************************************************************************************************************
+
+
+
+
+
+
+
