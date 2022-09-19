@@ -67,7 +67,7 @@ void pushZeroesEnd(int *input, int size)
 {
     //Write your code here
     int k=0;
-	for(int i=0;i<size;i++)
+    for(int i=0;i<size;i++)
     {
         if(input[i] != 0)
         {
@@ -91,14 +91,14 @@ int main()
       int size;
       cin >> size;
       int *input = new int[size];
-      for (int i = 0; i < size; i++)
+      for(int i = 0; i < size; i++)
       {
          cin >> input[i];
       }
       
       pushZeroesEnd(input, size);
 
-      for (int i = 0; i < size; i++)
+      for(int i = 0; i < size; i++)
       {
          cout << input[i] << " ";
       }
