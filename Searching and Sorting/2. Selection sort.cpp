@@ -5,11 +5,11 @@
 
 * Example-  [1, 7, 9, 2, 3, 0]
 
-  round-1:  [0, 7, 9, 2, 3, 1]
-  round-2:  [0, 1, 9, 2, 3, 7]
-  round-3:  [0, 1, 2, 9, 3, 7]
-  round-4:	[0, 1, 2, 3, 9, 7]
-  round-5:  [0, 1, 2, 3, 7, 9]
+  round-1: [0, 7, 9, 2, 3, 1]
+  round-2: [0, 1, 9, 2, 3, 7]
+  round-3: [0, 1, 2, 9, 3, 7]
+  round-4: [0, 1, 2, 3, 9, 7]
+  round-5: [0, 1, 2, 3, 7, 9]
   
 * Total comparisions = (N-1)
 * Not Stable, but can be made stable.
@@ -73,8 +73,6 @@ int main()
   cout << endl;
   return 0;
 }
-
-
 
 
 
