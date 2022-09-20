@@ -1,87 +1,119 @@
 /*
+problem:
+*********
+	For a given a string(str) and a character X, write a function to remove all the occurrences of X from the given string.
+	The input string will remain unchanged if the given character(X) doesn't exist in the input string.
+
+Constraints:
+	0 <= N <= 10^6
+	Where N is the length of the input string.
+	Time Limit: 1 second
+	
 Sample Input 1:
 aabccbaa
 a
 Sample Output 1:
 bccb
-
-Sample Input 2:
-xxyyzxx
-y
-Sample Output 2:
-xxzxx
 */
+
+
+
+
 
 
 //*********************************************************************************************************************************************************************
 
-//                                                                      USING STRING
-//                                                                      ************
+solution-1
+two-pointer approach
+*********************
 
-#include<bits/stdc++.h>
-using namespace std;
-string removeAllOccurencesOfChar(string str,char ch)
+void removeAllOccurrencesOfChar(char arr[], char ch)
 {
-	string ans;
-	for(int i=0;i<str.length();i++)
-	{
-		if(str[i] != ch)
-		{
-			ans += str[i];	
-		}	
-	}	
-	return ans;
+   int n = strlen(arr);
+   int i=0;
+   int j=0;
+   while(i<n)
+   {
+      if(arr[j] == ch)
+      {
+         j++;
+      }
+      else
+      {
+          swap(arr[i], arr[j]);
+          i++;
+          j++;
+      }
+   }
+   arr[i] = '\0';
 }
 
 
-int main()
-{
-	string str;
-	cin >> str;
-	
-	char ch;
-	cin >> ch;
-	
-	cout << removeAllOccurencesOfChar(str,ch);
-	return 0;
-}
-*/
 
 
-//******************************************************************************************************************************************************************
-  
-//                                                                    USING CHARACTER ARRAY
-//                                                                    *********************
-  
-  
+
+*************************************************************************************************************************************************************************
+
+
+//solution-2
+*************
+
 #include<bits/stdc++.h>
 using namespace std;
+
 void removeAllOccurrencesOfChar(char str[], char c)
 {
-	int j=0;
-	for(int i=0;str[i] != '\0';i++)
-	{
-		if(str[i] != c)
-		{
-			str[j] = str[i];
-			j++;
-		}
-	}
-	str[j] = '\0';
+   int j=0;
+   for(int i=0;str[i] != '\0';i++)
+   {
+      if(str[i] != c)
+      {
+         str[j] = str[i];
+	 j++;
+      }
+   }
+   str[j] = '\0';
 }
 
 
-int main()
+
+int main() 
 {
-	int size  = 1e6;
-	char str[size];
-	cin.getline(str,size);
-	
-	char c;
-	cin >> c;
-	
-	removeAllOccurrencesOfChar(str, c);
-    cout << str;
+   int size = 1e6;
+   char str[size];
+   cin.getline(str, size);
+   char c;
+   cin >> c;
+   removeAllOccurrencesOfChar(str, c);
+   cout << str;
 }
+
+
+
+
+
+
+*****************************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
