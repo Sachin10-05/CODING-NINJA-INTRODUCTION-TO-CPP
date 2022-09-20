@@ -1,5 +1,14 @@
 /*
-/*
+problem:
+*********
+For a given a string(str), find and return the highest occurring character.
+Note:  Assume all the characters in the given string to be in lowercase always.
+
+Constraints:
+	0 <= N <= 10^6
+	Where N is the length of the input string.
+	Time Limit: 1 second
+	
 Sample Input 1:
 abdefgbabfba
 Sample Output 1:
@@ -12,89 +21,66 @@ x
 */
 
 
+
+
+
+
 //*********************************************************************************************************************************************************************
-//                                                                      USING STRING
-//                                                                      ************
 
-/*
-#include<bits/stdc++.h>
-using namespace std;
-char highestOccuringChar(string str)
+
+* solution:
+************
+
+char highestOccurringChar(char arr[]) 
 {
-	//character array to store count of all character
-	int arr[26] = {0};
-	for(int i=0;i<str.length();i++)
-	{
-		arr[str[i] - 'a']++;
-	}
-	
-	char ans = 'a';
-	int max = 0;
-	for(int i=0;i<26;i++)
-	{
-		if(arr[i] > max)
-		{
-			max = arr[i];
-			ans = i + 'a';
-		}
-	}
-	cout << max << "\n";
-	return ans;
+   //count of characters
+   int freq[26] = {0};
+   for(int i=0; arr[i]!='\0'; i++)
+   {
+      freq[arr[i]-'a']++;
+   }
+    
+   int max = -1;
+   int index;
+   for(int i=0;i<26;i++)
+   {
+      if(freq[i] > max)
+      {
+         max = freq[i];
+         index = i;
+      }
+   }
+   char ans = index + 'a';
+   return ans;
 }
 
 
-int main()
+
+int main() 
 {
-	string str;
-	cin >> str;
-	cout << highestOccuringChar(str);
-	return 0;
-}
-*/
-
-
-
-//*******************************************************************************************************************************************************************
-
-//                                                              USING CHARACTER ARRAY
-//                                                              *********************
-
-#include<bits/stdc++.h>
-using namespace std;
-char highestOccurringChar(char input[]) 
-{
-    char result;
-  	int i, len;
-  	int max = -1;
-  	
-  	int freq[256] = {0}; 
- 
-  	len = strlen(input);
-  	
-  	for(i = 0; i < len; i++)
-  	{
-  		freq[input[i]]++;
-	}
-  		
-  	for(i = 0; i < len; i++)
-  	{
-		if(max < freq[input[i]])
-		{
-			max = freq[input[i]];
-			result = input[i];
-		}
-	}
-  	return result;
+   int size = 1e6;
+   char str[size];
+   cin >> str;
+   cout << highestOccurringChar(str);
 }
 
 
 
-int main() {
-    int size = 1e6;
-    char str[size];
-    cin >> str;
-    cout << highestOccurringChar(str);
-}
+
+
+******************************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
