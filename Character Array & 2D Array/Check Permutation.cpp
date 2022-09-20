@@ -37,27 +37,27 @@ using namespace std;
 
 bool isPermutation(char arr1[], char arr2[])
 {
-  //frequency of characters of arr1
-	int count1[26] = {0};      
-	for(int i=0;i<strlen(arr1);i++)
-	{
-		count1[arr1[i]-'a']++;
-	}
+   //frequency of characters of arr1
+   int count1[26] = {0};      
+   for(int i=0;i<strlen(arr1);i++)
+   {
+      count1[arr1[i]-'a']++;
+   }
 	
-  //frequency of characters of arr2
-	int count2[26] = {0};      
-	for(int i=0;i<strlen(arr2);i++)
-	{
-		count2[arr2[i]-'a']++;
-	}
+   //frequency of characters of arr2
+   int count2[26] = {0};      
+   for(int i=0;i<strlen(arr2);i++)
+   {
+      count2[arr2[i]-'a']++;
+   }
 	
-	//check eual or not
-	for(int i=0;i<26;i++)
-	{
-		if(count1[i] != count2[i])
-			return false;
-	}
-	return true;
+   //check eual or not
+   for(int i=0;i<26;i++)
+   {
+      if(count1[i] != count2[i])
+         return false;
+   }
+   return true;
 }
 
 
