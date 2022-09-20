@@ -4,19 +4,27 @@ Problem:
 Given an input string S that contains multiple words, you need to remove all the spaces present in the input string.
 There can be multiple spaces present after any word.
 
-Input Format :  String S
-Output Format : Updated string
+Constraints :
+	1 <= Length of string S <= 10^6
 
 Sample Input :
 abc def g hi
+
 Sample Output :
 abcdefghi
 */
 
 
 
+
+
 //*******************************************************************************************************************************************************************
-//Time Complexity : O(N)
+
+
+//solution:
+* Time Complexity : O(N)
+* Space complexity: O(1)
+**************************
 
 
 
@@ -24,35 +32,36 @@ abcdefghi
 #include<bits/stdc++.h>
 using namespace std;
 
-string trimSpaces(char str[])
+void trimSpaces(char arr[])
 {
-	int x=0;
-	for(int i=0;str[i];i++)
-	{
-		if(str[i] != ' ')
-			str[x++] = str[i];
-	}
-	str[x] = '\0';
-	
-	
-	for(int i=0;i<strlen(str);i++)
-	{
-		cout << str[i];
-	}
+   int x = 0;
+   for(int i=0;i<strlen(arr);i++)
+   {
+      if(arr[i] != ' ')
+      {
+         arr[x] = arr[i];
+         x++;
+      }
+   }
+   arr[x] = '\0';
+}
+
+
+
+int main() 
+{
+    char input[1000000];
+    cin.getline(input, 1000000);
+    trimSpaces(input);
+    cout << input << endl;
 }
 
 
 
 
 
-int main()
-{
-	char str[100000];
-	cin.getline(str,100000);
-	
-	trimSpaces(str);
-	cout << str << endl;
-}
+
+
 
 
 
