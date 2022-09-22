@@ -14,7 +14,7 @@ Time Limit: 1 sec
 Sample Input 1:
 7
 1 3 7 9 11 12 45
-1
+1 ------------------------> No of test cases
 3
 Sample Output 1:
 1
@@ -42,15 +42,21 @@ Sample Output 2:
 //Binary Search
 ****************
 
-i)   Time complexity: O(log(N))
-ii)  Array must be sorted either in Ascending or in Descending order.
-iii) if start and end index are very large then finding Mid = (start+end)/2 might create problem in that case we can use:
-	 int mid = start + (end - start)/2 will also result same thing.
+* Array must be sorted either in Ascending or in Descending order.
+* if start and end index are very large then finding Mid = (start+end)/2 might create problem in that case we can use:
+  int mid = start + (end - start)/2 will also result same thing.
 
 
+//*********************************************************************************************************************************************************************
+//*********************************************************************************************************************************************************************
 
-//solution-1
-*************
+
+* solution-1
+* using Iteration
+* Time complexity: O(log(N))
+* Space Complexity: O(1)
+**********************************
+
 
 int binarySearch(int *arr, int n, int val)
 {
@@ -74,10 +80,59 @@ int binarySearch(int *arr, int n, int val)
 
 
 
+
+
+*****************************************************************************************************************************************************************************
 *****************************************************************************************************************************************************************************
 
-//solution-2
-*************
+]* solution-2
+* using Recursion
+* Time complexity: O(log(N))
+* Space Complexity: O(log(N))
+**********************************
+
+
+int helper(int arr[], int start, int end, int k)
+{
+   int mid = start + (end-start)/2;
+   //base case
+   if(start > end)
+      return -1;
+   if(arr[mid] == k)
+      return mid;
+   if(arr[mid] > k)
+   {
+      return helper(arr, start, mid-1, k);
+   }
+   else
+   {
+      return helper(arr, mid+1, end, k);
+   }
+}
+
+
+int binarySearch(int *arr, int n, int val)
+{
+   int start = 0;
+   int end = n-1;
+   return helper(arr,start,end,val);
+}
+
+
+
+
+
+
+
+
+*****************************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************************
+
+
+//solution-3:
+//using Iteration
+*******************
+
 
 /*
 #include<bits/stdc++.h>
@@ -102,18 +157,18 @@ int binarySearch(int *arr,int size,int x)
 
 int main()
 {
-   int size;   //size of array
+   int size;  
    cin >> size;
    int *input = new int[size];
    for(int i=0;i<size;i++)
    {
       cin >> input[i];
    }
-   int t;     //No of test cases
+   int t;     
    cin >> t;
    while(t--)
    {
-      int val;  //Element to be searched
+      int val;  
       cin >> val;
       cout << binarySearch(input,size,val);
    }
@@ -126,7 +181,9 @@ int main()
 
 
 
-***************************************************************************************************************************************************************************
+
+*****************************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************************
 
 
 
