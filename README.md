@@ -1,8 +1,8 @@
 # Introduction to C++
 Below are the topics covered week wise and are arranged in sequential order) <br />
 My Certificates: <br />
-Completion Certificate: [CLICK HERE](http://htmlpreview.github.io/?https://github.com/Sachin10-05/Github-Finder-Application/blob/main/index.html)  <br/>
-Certification of Excellence: [CLICK HERE](http://htmlpreview.github.io/?https://github.com/Sachin10-05/Github-Finder-Application/blob/main/index.html)  <br/>
+Completion Certificate: [CLICK HERE](http://htmlpreview.github.io/?https://github.com/Sachin10-05/Introduction_To_CPP_Coding_Ninja/blob/main/Completion%20Certificate.pdf)  <br/>
+Certification of Excellence: [CLICK HERE](http://htmlpreview.github.io/?https://github.com/Sachin10-05/Introduction_To_CPP_Coding_Ninja/blob/main/Certificate%20Of%20Excellence.pdf)  <br/>
 </br>
 
 
