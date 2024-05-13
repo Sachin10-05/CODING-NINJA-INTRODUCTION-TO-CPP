@@ -1,9 +1,13 @@
 # Introduction to C++
-Below are the topics covered week wise and are arranged in sequential order) <br />
+Below are the topics covered week wise and are arranged in sequential order. <br />
+<br />
 My Certificates: <br />
 Completion Certificate: [CLICK HERE](https://github.com/Sachin10-05/Introduction_To_CPP_Coding_Ninja/blob/main/Completion%20Certificate.pdf)  <br/>
 Certification of Excellence: [CLICK HERE](https://github.com/Sachin10-05/Introduction_To_CPP_Coding_Ninja/blob/main/Certificate%20Of%20Excellence.pdf)  <br/>
 </br>
+Notes: <br />
+To view Notes: [CLICK HERE](https://github.com/Sachin10-05/Introduction_To_CPP_Coding_Ninja/tree/main/Notes)
+<br />
 
 
 ## Week-1:
