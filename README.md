@@ -1,7 +1,7 @@
-**Introduction to C++**
-*******************
+# Introduction to C++
+*********************
 
-(Below are the topics covered week wise and are arranged in sequential order)
+## (Below are the topics covered week wise and are arranged in sequential order)
 
 Week-1:
 -------
@@ -23,7 +23,7 @@ Week-3:
 Week-4:
 -------
   * Arrays
-  * Searching and Sorting
+  * Searching & Sorting
 
 Week-5:
 -------
